@@ -1,6 +1,6 @@
 type Station struct{
 	Id string `gorm:"type:uuid;primaryKey"`
-	Frequency float64 `gorm:"column:name;unique"`
+	Frequency float64 `gorm:"column:frequency;unique"`
 	Name string `gorm:"column:name"`
 	Genre string `gorm:"column:genre"`
 	Stream_Url string `gorm:"column:stream_url"`
